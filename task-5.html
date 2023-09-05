@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>task-5</title>
+    </head>
+    <script>
+        function matchpassword(){
+            var password = document.getElementById("password").value;
+            var repassword = document.getElementById("repassword").value;
+            if(password != repassword){
+                alert("passwords didnot match");
+            }
+            else{
+                alert("saved successfully");
+            }
+        }
+    </script>
+    <style>
+        .center{
+            justify-content: center;
+            display: flex;
+            padding: 30px;
+        }
+        .button{
+            justify-content: center;
+            display: flex;
+        }
+        table,td{
+            border-left: 2px solid;
+            border-bottom: 1px solid;
+            border-right: 2px solid;
+            border-top:1px solid ;
+        }
+        label{
+            font-weight: bold;
+        }
+        caption{
+            font-size: 40px;
+            color: blue;
+            font-weight: bold;
+        }
+        .margin{
+            text-align: right;
+        }
+    </style>
+    <body>
+        <div class="center">
+        <table>
+            <caption>Registration form</caption>
+            <form>
+                <tr>
+                    <td><label for="fullname">Full Name:</label></td>
+                    
+                    <td><input type="text" size="100"name="fullname"></td>
+                </tr>
+                <tr>
+                    <td><label for="lastname">lastName:</label></td>
+                    
+                    <td><input type="text" size="100" name="lastname"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    
+                    <td ><input type="email" size="100"name="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    
+                    <td><input type="password" size="100" id="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="repassword">Re-enter Password:</label></td>
+                    
+                    <td><input type="password" size="100" id="repassword" name="repassword"></td>
+                </tr>
+                <tr> 
+                    <td rowspan="2"><labal for="gender">Gender:</labal></td>
+                    <td><input type="radio" name="gender">male</td></tr>
+                <tr>
+                    <td><input type="radio" name="gender">female</td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age:</label></td>
+                    
+                    <td><input type="text" size="100" name="age"></td>
+                </tr>
+                <tr>
+                    <td><label for="phonenumber">PhoneNumber:</label></td>
+                    
+                    <td><input type="text" size="100" name="phonenumber"></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    
+                    <td><textarea rows="4" cols="93" name="address"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="state">State:</label></td>
+                    
+                    <td><input type="text" size="100" name="state"></td>
+                </tr>
+                <tr>
+                    <td><label>Country:</label></td>
+                    
+                    <td><select>
+                        <option>--select your country--</option>
+                        <option>india</option>
+                        <option>usa</option>
+                        <option>russia</option>
+                        <option>autralia</option>
+                        <option>canada</option>
+                        <option>japan</option>
+                        <option>korea</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label>languages known</label></td>
+                    <td>
+                        <input type="checkbox">English
+                        <input type="checkbox">Telugu
+                        <input type="checkbox">Hindi
+                        <input type="checkbox">Kannada
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    <input type="checkbox">Hereby I declare all the given details are true
+                </td></tr>
+                <tr><td colspan="2" class="margin"> log in to <a href="https://careers.ethnus.com/candidateportal?register=true">ethnus</a> website
+                </td></tr>
+
+            </form>
+        </table>
+        </div>
+        <div class="button">
+        <input type="submit" value="register" onclick="matchpassword()">
+    </div>
+    </body>
+</html>

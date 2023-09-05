@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        csstask2
+    </title>
+<style>
+    body{
+        padding-left: 5rem;
+        padding-top: 5rem;
+    }
+    h3{
+        margin-left: 45rem;
+        font-size: 2rem;
+    }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #6cdddfea;
+  border: 2px solid;
+}
+ol{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  }
+
+.left{
+    
+    margin-left: 45rem;
+}
+#left{
+    background-color: #999;
+    float: left;
+}
+
+li a {
+    font-weight: bold;
+  display: block;
+  color: #0515f0;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+li a.active2 {
+  background-color: #333;
+  color: white;
+}
+li a:hover:not(.active2) {
+  background-color: #333;
+  color: white;
+}
+
+li a.active {
+  background-color: orange;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: orange;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Vertical Navigation Bar</h2>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#">java</a></li>
+  <li><a href="#">CSS</a></li>
+  <li><a href="#">HTML</a></li>
+  <li><a href="#">bootstrap</a></li>
+</ul>
+<h3>horizontal navigation bar</h3>
+<ol class="left">
+    <li id="left"><a class="active2" href="#home">Home</a></li>
+    <li id="left"><a href="#">java</a></li>
+    <li id="left"><a href="#">CSS</a></li>
+    <li id="left"><a href="#">HTML</a></li>
+    <li id="left"><a href="#">bootstrap</a></li>
+  </ol>
+  
+
+</body>
+</html>
+
+
